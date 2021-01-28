@@ -24,7 +24,7 @@ body {
 
 .link-header {
     text-decoration: none;
-    padding: 0 15px;
+    
     color: #262626;
 }
 
@@ -73,10 +73,12 @@ body {
     font-size: 16px;
     line-height: 25px;
     font-weight: 700;
+    margin: 0 15px;
 }
 
 .navigation__list--item:hover {
     border-top: 3px solid #FF6033;
+
 }
 
 
