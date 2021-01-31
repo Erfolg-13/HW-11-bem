@@ -22,14 +22,23 @@ body {
     font-weight: 900;
 }
 
+.subscribe-to-us__title {
+    font-size: 40px;
+}
+
+.blog__title {
+    font-size: 90px;
+}
+
+.link {
+    text-decoration: none;  
+}
+
 .link-header {
-    text-decoration: none;
-    
     color: #262626;
 }
 
 .link-blog {
-    text-decoration: none;
     color: #FFFFFF;
 }
 
@@ -128,6 +137,7 @@ body {
     background: linear-gradient(0deg, rgba(0,196,196,1) 0%, rgba(0,183,183,1) 3%, rgba(0,173,173,1) 7.000000000000001%, rgba(0,156,156,1) 30%);
     display: flex;
     color: #FFFFFF;
+    line-height: 27px;
 }
 
 .about-us__img {
@@ -140,16 +150,15 @@ body {
     padding: 161px 165px 0 0;
 }
 
-.about-us__title {
+.about-us__title,
+.gallery__title {
     font-size: 90px;
-    line-height: 27px;
     padding: 40px 0;
 }
 
 .about-us__article--page {
     width: 500px;
     font-size: 17px;
-    line-height: 27px;
     font-weight: 300;
 }
 
@@ -248,7 +257,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 775px;
-    opacity: 1; 
     color: #262626;
     text-align: center;
     padding: 0 165px;
@@ -280,7 +288,7 @@ body {
     min-height: 445px;
 }
 
-input {
+.form__contact--item {
     width: 480px;
     min-height: 50px;
     margin-bottom: 15px;
@@ -299,7 +307,7 @@ input:focus {
     border-left: 5px solid #355B82;
 }
 
-input::placeholder {
+.form__contact--item::placeholder {
     color: #FFFFFF;
     font-size: 15px;
     line-height: 25px;
@@ -373,6 +381,167 @@ textarea::placeholder {
     font-size: 15px;
 }
 
-.text-red {
+.colour-red {
     color: #FF2B58;
 }
+
+.services {
+    min-height: 790px;
+    background: #70BFFF;
+    padding: 130px 130px 100px 200px;
+}
+
+.services__cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__col1--list {
+    margin-bottom: 20px;
+    width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px #00000080;
+    line-height: 27px;
+}
+
+.services__col1--item {
+    width: 75%;
+    padding-top: 25px;
+    color: #262626;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #d1d1d1;
+}
+
+.icons {
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #FFFFFF;
+}
+
+.services__col2 {
+    width: 545px;
+    position: relative;
+}
+ 
+.services__title {
+    font-size: 90px;
+    color: #FFFFFF;
+    line-height: 27px;
+    text-align: left;
+    position: absolute;
+    padding-top: 250px;
+}
+
+.services__image {
+    padding-left: 80px;
+}
+
+.services__icons {
+    width: 40px;
+    height: 100%;
+    text-align: right;
+    border-left: 1px solid #000000;
+}
+
+.gallery {
+    min-height: 1536px;
+    padding: 80px 130px 50px 130px;
+    background: #FFE92F;
+    color: #262626;
+    text-align: center;
+}
+
+.gallery__article {
+    width: 630px;
+    min-height: 91px;
+    margin: 0 auto;
+    padding: 0 5px 20px 0;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.gallery__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__image-1 {
+    margin-left: -5px;
+}
+
+.gallery__image-2 {
+    margin: 7px 0;
+}
+
+button {
+    color: #FFFFFF;
+    font-size: 20px; 
+    border: none; 
+}
+
+.gallery__button {
+    margin: 50px;
+    width: 200px;
+    height: 55px;
+    background: #5585A2;
+    box-shadow: -1px 1px 2px 2px rgba(175, 160, 32);
+}
+
+.subscribe-to-us__button {
+    margin-left: 30px;
+    width: 170px;
+    min-height: 55px;
+    background: #96B92C;
+    box-shadow: -1px 1px 2px 2px rgba(210, 210, 210);
+}
+
+.gallery__link {
+    text-decoration: none;
+}
+
+.subscribe-to-us {
+    min-height: 475px;
+    background-image: url('./images/bg-subscribe-to-us.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 140px 130px;
+    line-height: 27px;
+    color: #262626;
+}
+
+.subscribe-to-us__article {
+    width: 570px;
+    min-height: 72px;
+    padding: 21px 0;
+    font-size: 17px;
+}
+
+.subscribe-to-us__mail {
+    border: 1px solid #262626;
+    width: 570px;
+    height: 55px;
+    padding-left: 20px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 1px rgba(210, 210, 210);
+}
+
+.subscribe-to-us__mail::placeholder {
+    font-size: 15px;
+    color: #262626;
+    opacity: 0.5;
+}
+
+.subscribe-to-us__mail:focus {
+    border: 1px solid #262626;
+    opacity: 1;
+}
+
