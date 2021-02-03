@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -15,25 +15,26 @@
         <div class="header">
             <div class="header__menu">
                 <img class="header__menu--img" src="./images/log.png" alt="log">
+                <button class="navigation-toggle header__body--btn">Menu</button>
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__list--item navigation__list--active">
-                            <a class="link-header link" href="#">HOME</a>
+                            <a class="link-header" href="#">HOME</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">ABOUT</a>
+                            <a class="link-header" href="#">ABOUT</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">SERVICES</a>
+                            <a class="link-header" href="#">SERVICES</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">GALLERY</a>
+                            <a class="link-header" href="#">GALLERY</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">BLOG</a>
+                            <a class="link-header" href="#">BLOG</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">CONTACT</a>
+                            <a class="link-header" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +46,7 @@
                     nostrud exercitation ullamco.
                 </p>
                 <form>
-                    <a class="link-header link" href="#"><button class="header__body--btn">GET FREE NOW</button></a>
+                    <button class="header__body--btn">GET FREE NOW</button>
                 </form>
                 <p class="header__body--scroll">
                     <a href="#main"><img src="./images/scroll.png" alt="scroll"></a>
@@ -108,7 +109,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="services__col2">
+                <div class="services__cols--col2">
                     <h1 class="services__title">Our Services</h1>
                     <img class="services__image" src="./images/service.png" alt="service">
                 </div>
@@ -124,16 +125,16 @@
             </p>
             <div class="gallery__images">
                 <img class="gallery__image-1" src="./images/gallery-big.png" alt="gallery-big">
-                <div>
+                <div class="gallery__image2-3">
                     <div class="gallery__image-2">
                         <img src="./images/gal-ltl1.png" alt="gal-ltl1">
                     </div>
-                    <div>
+                    <div class="gallery__image-3">
                         <img src="./images/gal-ltl2.png" alt="gal-ltl2">
                     </div>
                 </div>
-                <img src="./images/gallery4.png" alt="gallery4">
-                <img src="./images/gallery5.png" alt="gallery5">
+                <img class="gallery__image3-4" src="./images/gallery4.png" alt="gallery4">
+                <img class="gallery__image3-4" src="./images/gallery5.png" alt="gallery5">
             </div>
             <a class="gallery__link" href="#">
                 <button class="gallery__button button">
@@ -188,9 +189,9 @@
                 </div>
             </div>
             <div class="blog__view-more">
-                <form>
-                    <a class="link-blog link" href="#"><button class="blog__view-more--btn">VIEW MORE</button></a>
-                </form>
+                <a class="link-blog link" href="#">
+                    <button class="blog__view-more--btn">VIEW MORE</button>
+                </a>
             </div>
 
         </div>
