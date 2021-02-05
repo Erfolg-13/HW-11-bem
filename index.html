@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -21,22 +21,25 @@
                             <a class="link-header link" href="#">HOME</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">ABOUT</a>
+                            <a class="link-header link" href="#about">ABOUT</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">SERVICES</a>
+                            <a class="link-header link" href="#services">SERVICES</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">GALLERY</a>
+                            <a class="link-header link" href="#gallery">GALLERY</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">BLOG</a>
+                            <a class="link-header link" href="#blog">BLOG</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header link" href="#">CONTACT</a>
+                            <a class="link-header link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
+                <button class="navigation-toggle">
+                    <span></span>
+                </button>
             </div>
             <div class="header__body">
                 <h1 class="header__body--title">Fresh Life</h1>
@@ -45,16 +48,12 @@
                     nostrud exercitation ullamco.
                 </p>
                 <form>
-                    <a class="link-header link" href="#"><button class="header__body--btn">GET FREE NOW</button></a>
+                    <button class="header__body--btn">GET FREE NOW</button>
                 </form>
-                <p class="header__body--scroll">
-                    <a href="#main"><img src="./images/scroll.png" alt="scroll"></a>
-                </p>
-
             </div>
         </div>
 
-        <div class="about-us">
+        <div id="about" class="about-us">
             <img class="about-us__img" src="./images/img-1.png" alt="img-1">
             <div class="about-us__article">
                 <h1 class="about-us__title">About Us</h1>
@@ -72,7 +71,7 @@
             </div>
         </div>
 
-        <div class="services">
+        <div id="services" class="services">
             <div class="services__cols">
                 <div class="services__cols--col1">
                     <a class="link" href="#">
@@ -108,7 +107,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="services__col2">
+                <div class="services__cols--col2">
                     <h1 class="services__title">Our Services</h1>
                     <img class="services__image" src="./images/service.png" alt="service">
                 </div>
@@ -116,24 +115,29 @@
             </div>
 
         </div>
-        <div class="gallery">
+        <div id="gallery" class="gallery">
             <h1 class="gallery__title">Gallery</h1>
             <p class="gallery__article">
                 Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="gallery__images">
-                <img class="gallery__image-1" src="./images/gallery-big.png" alt="gallery-big">
-                <div>
-                    <div class="gallery__image-2">
-                        <img src="./images/gal-ltl1.png" alt="gal-ltl1">
-                    </div>
-                    <div>
-                        <img src="./images/gal-ltl2.png" alt="gal-ltl2">
-                    </div>
+                <div class="gallery__image-1">
+                    <img class="image-1" src="./images/gallery-big.png" alt="gallery-big">
                 </div>
-                <img src="./images/gallery4.png" alt="gallery4">
-                <img src="./images/gallery5.png" alt="gallery5">
+                <div class="gallery__image2-3">
+                    <!-- <div class="gallery__image-2">  </div> -->
+                    <img class="image-2" src="./images/gal-ltl1.png" alt="gal-ltl1">
+
+                    <!-- <div class="gallery__image-3"></div> -->
+                    <img class="image-3" src="./images/gal-ltl2.png" alt="gal-ltl2">
+                </div>
+                <div class="gallery__image-4">
+                    <img class="image-4" src="./images/gallery4.png" alt="gallery4">
+                </div>
+                <div class="gallery__image-5">
+                    <img class="image-5" src="./images/gallery5.png" alt="gallery5">
+                </div>
             </div>
             <a class="gallery__link" href="#">
                 <button class="gallery__button button">
@@ -156,7 +160,7 @@
         </div>
 
 
-        <div class="blog">
+        <div id="blog" class="blog">
             <div class="blog__about">
                 <h1 class="blog__title">Blog</h1>
                 <p class="blog__about--page">
@@ -188,15 +192,15 @@
                 </div>
             </div>
             <div class="blog__view-more">
-                <form>
-                    <a class="link-blog link" href="#"><button class="blog__view-more--btn">VIEW MORE</button></a>
-                </form>
+                <a class="link-blog link" href="#">
+                    <button class="blog__view-more--btn">VIEW MORE</button>
+                </a>
             </div>
 
         </div>
 
         <div class="form">
-            <div class="form__contact">
+            <div id="contact" class="form__contact">
                 <h1 class="form__contact--title">Contact</h1>
                 <p class="form__contact--subtitle">
                     For new projects, ideas, business or anything you'd like to discuss,
@@ -217,7 +221,7 @@
                     </div>
                     <div class="form__contact--adress">
                         <h3 class="form__adress--title">ADDRESS</h3>
-                        <span class="form__adress--item"></span> 123 City name, Street, City, Country
+                        <span class="form__adress--item">123 City name, Street, City, Country</span>
                         <h3 class="form__adress--title">EMAIL</h3>
                         <span class="form__adress--item">cahee@domain.com</span>
                         <h3 class="form__adress--title">PHONE</h3>
