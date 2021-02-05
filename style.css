@@ -462,7 +462,8 @@ button {
 .form__contact {
     background-image: url('./images/bg-form.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-size: cover;
     min-height: 80vh;
     color: #262626;
     text-align: center;
@@ -865,6 +866,7 @@ input:focus {
     .form__contact--message {
         padding-right: 85px;
         min-height: 445px;
+        width: 60%;
     }
     
     .form__contact--item {
@@ -879,7 +881,7 @@ input:focus {
     }
     
     .form__contact--adress {
-        width: 500px;
+        width: 40%;
         padding-left: 30px;
     }
     
