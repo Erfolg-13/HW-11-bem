@@ -15,29 +15,31 @@
         <div class="header">
             <div class="header__menu">
                 <img class="header__menu--img" src="./images/log.png" alt="log">
-                <button class="navigation-toggle header__body--btn">Menu</button>
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__list--item navigation__list--active">
-                            <a class="link-header" href="#">HOME</a>
+                            <a class="link-header link" href="#">HOME</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header" href="#">ABOUT</a>
+                            <a class="link-header link" href="#about">ABOUT</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header" href="#">SERVICES</a>
+                            <a class="link-header link" href="#">SERVICES</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header" href="#">GALLERY</a>
+                            <a class="link-header link" href="#">GALLERY</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header" href="#">BLOG</a>
+                            <a class="link-header link" href="#">BLOG</a>
                         </li>
                         <li class="navigation__list--item">
-                            <a class="link-header" href="#">CONTACT</a>
+                            <a class="link-header link" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
+                <button class="navigation-toggle">
+                    <span></span>
+                </button>
             </div>
             <div class="header__body">
                 <h1 class="header__body--title">Fresh Life</h1>
@@ -48,14 +50,10 @@
                 <form>
                     <button class="header__body--btn">GET FREE NOW</button>
                 </form>
-                <p class="header__body--scroll">
-                    <a href="#main"><img src="./images/scroll.png" alt="scroll"></a>
-                </p>
-
             </div>
         </div>
 
-        <div class="about-us">
+        <div id="about" class="about-us">
             <img class="about-us__img" src="./images/img-1.png" alt="img-1">
             <div class="about-us__article">
                 <h1 class="about-us__title">About Us</h1>
@@ -124,17 +122,22 @@
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="gallery__images">
-                <img class="gallery__image-1" src="./images/gallery-big.png" alt="gallery-big">
-                <div class="gallery__image2-3">
-                    <div class="gallery__image-2">
-                        <img src="./images/gal-ltl1.png" alt="gal-ltl1">
-                    </div>
-                    <div class="gallery__image-3">
-                        <img src="./images/gal-ltl2.png" alt="gal-ltl2">
-                    </div>
+                <div class="gallery__image-1">
+                    <img class="image-1" src="./images/gallery-big.png" alt="gallery-big">
                 </div>
-                <img class="gallery__image3-4" src="./images/gallery4.png" alt="gallery4">
-                <img class="gallery__image3-4" src="./images/gallery5.png" alt="gallery5">
+                <div class="gallery__image2-3">
+                    <!-- <div class="gallery__image-2">  </div> -->
+                    <img class="image-2" src="./images/gal-ltl1.png" alt="gal-ltl1">
+
+                    <!-- <div class="gallery__image-3"></div> -->
+                    <img class="image-3" src="./images/gal-ltl2.png" alt="gal-ltl2">
+                </div>
+                <div class="gallery__image-4">
+                    <img class="image-4" src="./images/gallery4.png" alt="gallery4">
+                </div>
+                <div class="gallery__image-5">
+                    <img class="image-5" src="./images/gallery5.png" alt="gallery5">
+                </div>
             </div>
             <a class="gallery__link" href="#">
                 <button class="gallery__button button">
@@ -218,7 +221,7 @@
                     </div>
                     <div class="form__contact--adress">
                         <h3 class="form__adress--title">ADDRESS</h3>
-                        <span class="form__adress--item"></span> 123 City name, Street, City, Country
+                        <span class="form__adress--item">123 City name, Street, City, Country</span>
                         <h3 class="form__adress--title">EMAIL</h3>
                         <span class="form__adress--item">cahee@domain.com</span>
                         <h3 class="form__adress--title">PHONE</h3>
